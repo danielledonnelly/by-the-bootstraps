@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Notes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">More</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <div class="container-fluid">
+    <h1>BY THE BOOTSTRAPS</h1>
+    <p>This is where I test Bootstrap and take notes on it for personal use. Most of this is paraphrased from <a href="https://www.freecodecamp.org/">freeCodeCamp</a> content.</p>
+    <br>
+
+    <!-- FLUID IMAGE -->
+    <h2>Fluid Image</h2>
+    <img src="https://blog.blueprintprep.com/wp-content/uploads/2023/07/mcat-fluid-dynamics.png" class="img-fluid" alt="A fluid image">
+    <p>The image above has the class <b>img-fluid</b>, which allows it to adapt to the size of the screen.</p>
+    <p>NOTE TO SELF: The img-responsive class was deprecated in Bootstrap 4. Instead, you should use the img-fluid class to make images responsive. </p>
+    <br>
+
+    <!-- FLUID CONTAINER -->
+    <div class="container-fluid">
+      <h2>Fluid Container</h2>
+      <p>This entire blurb (note how it is less wide than the rest of the site's content) is a fluid container. This fluid container also contains a fluid image, which you can see below.</h3>
+      <img class="img-fluid" src="https://m.media-amazon.com/images/I/519YRM8R2dL.jpg">
+      <p>The class <b>container-fluid</b> has a similar effect to img-fluid and can be applied to a div, like this one. All of the main content on this page is also housed within a fluid container.</p>
+     <p>So you could say that this particular blurb is a fluid container WITHIN a fluid container. </p>
+    </div>
+    <br>
+
+    <!-- CENTER TEXT-->
+    <h2 class="text-center">Center Text</h2>
+    <p class="text-center">This text has been centered using the class <b>text-center</b>.</p>
+    <br>
+
+    <!-- BOOTSTRAP BUTTONS -->
+    <h2>Bootstrap Buttons</h2>
+    <p>The buttons below each have the class <b>btn</b> as well as the class displayed in their text.</p>
+    <button class="btn btn-primary">btn-primary</button>
+    <button type="button" class="btn btn-secondary">btn-secondary</button>
+    <button class="btn btn-success">btn-success</button>
+    <button class="btn btn-info">btn-info</button>
+    <button class="btn btn-warning">btn-warning</button>
+    <button class="btn btn-danger">btn-danger</button>
+    <button type="button" class="btn btn-light">btn-light</button>
+    <button type="button" class="btn btn-dark">btn-dark</button>
+    <button class="btn btn-link">btn-link</button>
+    <button type="button" class="btn btn-outline-primary">btn-outline-primary</button>
+    <button type="button" class="btn btn-outline-secondary">btn-outline-secondary</button>
+    <button type="button" class="btn btn-outline-success">btn-outline-success</button>
+    <button type="button" class="btn btn-outline-danger">btn-outline-danger</button>
+    <button type="button" class="btn btn-outline-warning">btn-outline-warning</button>
+    <button type="button" class="btn btn-outline-info">btn-outline-info</button>
+    <button type="button" class="btn btn-outline-light">btn-outline-light</button>
+    <button type="button" class="btn btn-outline-dark">btn-outline-dark</button>
+    <button type="button" class="btn btn-dark btn-block">btn-dark btn-block</button>
+    <a href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_blank">
+      <button type="button" class="btn btn-primary btn-lg">Click here for more info about Bootstrap buttons.</button>
+    </a>
+    <p>Adding the class btn-block to your button will make it fill the entire width of your page.</p>
+    <br>
+
+    <!-- BOOTSTRAP GRID -->
+    <h2>Bootstrap Grid</h2>
+    <p>Bootstrap uses a responsive 12-column grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a div element.</p>
+    <p>Bootstrap has different column width attributes that it uses depending on how wide the user's screen is.</p>
+    <p>Take for example Bootstrap's col-md-* class. Here, md means medium, and * is a number specifying how many columns wide the element should be. In this case, the column width of an element on a medium-sized screen, such as a laptop, is being specified.</p>
+    <p>Learn more about the grid system <a href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a>.</p>
+    <div class="row">
+      <div class="container-fluid text-center">
+        <button class="col-lg-2">col-lg-2</button>
+        <button class="col-lg-2">col-lg-2</button>
+        <button class="col-lg-2">col-lg-2</button>
+        <button class="col-lg-2">col-lg-2</button>
+        <p>This text and the buttons above are in a div with the class "container-fluid text-center", which is within another div with the class "row". They are each 1 column thick, each one twelfth of the screen's width.</p>
+      </div>
+      
+      <br>
+      <div class="container-fluid text-center">
+        <button class="col-md-2">col-md-2</button>
+        <button class="col-md-2">col-md-2</button>
+        <button class="col-md-2">col-md-2</button>
+        <button class="col-md-2">col-md-2</button>
+        <p>This text and the buttons above are in a div with the class "container-fluid text-center", which is within another div with the class "row". They are each 2 column thick, each one sixth of the screen's width.</p>
+      </div>
+
+      <div class="container-fluid text-center">
+        <button class="col-xs-2">col-xs-2</button>
+        <button class="col-xs-2">col-xs-2</button>
+        <button class="col-xs-2">col-xs-2</button>
+        <button class="col-xs-2">col-xs-2</button>
+        <p>This text and the buttons above are in a div with the class "container-fluid text-center", which is within another div with the class "row". They are each 2 column thick, each one sixth of the screen's width.</p>
+      </div>
+    </div>
+    
+  
+  </div>
+    
+</section>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <span class="text-muted">FOOTER 👣</span>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
